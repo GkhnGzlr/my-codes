@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: azure;
+}
+.container {
+  background-color: bisque;
+
+  margin: 50px;
+  margin: 10px 30px;
+  margin: 10px 20px 30px 40px;
+
+  /*! Bir blok element icerinde inline elementler var ise bunlar text-align ile hizalanabilir. Blok element icerisindeki blok elementler text align ile hizalanamaz. */
+  text-align: center;
+
+  padding: 10px;
+  padding: 20px 10px;
+}
+
+.div {
+  background-color: blueviolet;
+
+  width: 100px;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+  /*? Bir blok element icerindeki bir baska blok element margin-auto ile ortalanabilir. */
+  margin: auto;
+  margin: 20px auto;
+}
