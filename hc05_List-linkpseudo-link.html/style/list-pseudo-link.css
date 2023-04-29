@@ -125,5 +125,6 @@ ul.before-after li:last-child::after {
 ul.before-after li:nth-child(2)::after {
   content: "nice car";
   content: "f53a";
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 400;
+}
