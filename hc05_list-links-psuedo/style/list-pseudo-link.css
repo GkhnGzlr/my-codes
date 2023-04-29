@@ -66,15 +66,23 @@ ul.pseudo li:nth-child(even) {
   color: lightsalmon;
 }
 
-ul.pseudo li:hover {
-  background-color: darkgray;
-  cursor: pointer;
-}
+/*?Tek degilse */
+/* ul.pseudo li:not(odd) {
+  background-color: green;
+} */
 
+/*? Fare ile li'lerin üzerine gelindiğinde  */
+ul.pseudo li:hover {
+  background-color: black;
+  cursor: pointer;
+  /* display: inline-block; */
+}
+/*? Farenin sol tuşu ile bir li'y tiklanidiginda  */
 ul.pseudo li:active {
   background-color: green;
 }
 
+/*? input aktif hale geldiginde  */
 input:focus {
   background-color: tomato;
   color: white;
@@ -82,22 +90,37 @@ input:focus {
   outline: none;
 }
 
-nav.links a {
+/*! ------ LINK PSEUDO CLASSES --------  */
+
+/* nav.links a {
   color: crimson;
   text-decoration: none;
 }
 
+nav.links a:hover {
+  color: purple;
+  text-decoration: underline;
+} */
+
+/*? Ziyaret edilmemis link'leri secmek icin */
 nav.links a:link {
   color: brown;
 }
-
+/*? Ziyaret edilmis link'leri secmek icin */
 nav.links a:visited {
   color: lightpink;
 }
 
+/*? Link'ler tiklanildigi sure boyunca secmek icin */
+nav.links a:active {
+  color: magenta;
+}
+/*? Fare ile link'lerin uzerine gelindiginde secmek icin */
 nav.links a:hover {
   color: chartreuse;
+  text-decoration: none;
 }
+
 /*? class'i x olan p elementinin icerinde .y class'inin içindeki z id'li elementi sec  */
 /* p.x .y #z{
 }
@@ -108,23 +131,35 @@ nav.links a:hover {
 </div>
 </p> */
 
+/*! ------  PSEUDO ELEMENTS --------  */
+
 .p-elements::first-line {
   color: red;
 }
+
 .p-elements::first-letter {
   font-size: 30px;
 }
 
 ul.before-after li::before {
-  content: "👍";
+  content: "👏";
+}
+
+ul.before-after li:nth-child(3)::before {
+  content: "🚘";
 }
 
 ul.before-after li:last-child::after {
-  content: "🚗";
+  content: "🏎️";
 }
+
 ul.before-after li:nth-child(2)::after {
-  content: "nice car";
-  content: "f53a";
-  font-family: "Times New Roman", Times, serif;
-  font-size: 400;
+  content: " Nice Car";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  content: "\f53a";
+}
+
+ul.before-after li:nth-child(3):hover::after {
+  content: "🚘";
 }
