@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-image:   */
+}
+
+#container {
+  width: 1240px;
+  height: 1036px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+  margin: auto;
+}
+#title {    
+  color: white;
+    font-family: "Bowlby One SC", cursive;
+  font-size: 50px;
+
+}
