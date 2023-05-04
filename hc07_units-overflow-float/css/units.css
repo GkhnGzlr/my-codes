@@ -1,14 +1,51 @@
+html {
+  /* height: 1000px; */
+  height: 100%;
+}
+
+body {
+  /** body nin default font size'ı 16px */
+  /*! body'nin default yuksekligi yoktur. Bu sebeple child'lardan herhangi birisine yuzdelik bir yukselik verildigin bu yukseklik calismaz */
+
+  /* height: 1000px; */
+  height: 100%;
+}
+
 h1 {
   color: red;
+  /*! Default 32px */
   font-size: 30px;
 }
+/*! -------- MUTLAK OLCU BIRIMLERI ------ */
 p.abs {
+  /*! Default 16px */
+
   font-size: 1cm;
   font-size: 10mm;
   font-size: 1in;
   font-size: 10px;
 }
+
+/*?  % biriminde bir html elemaninin font size'i parent'in font-size'ina gore oranlanir. */
 p.percent {
-  font-size: 200%;
-  font-size: 50%;
+  font-size: 200%; /*? 16px * 2  = 32px  */
+  font-size: 50%; /*? 16px / 2  = 8px  */
+}
+
+.div1 {
+  background-color: tomato;
+  width: 50%;
+  height: 50%;
+}
+
+.div2 {
+  background-color: green;
+  width: 50%;
+  height: 50%;
+}
+
+.div3 {
+  background-color: hotpink;
+  width: 90vw;
+  height: 50vh;
 }
