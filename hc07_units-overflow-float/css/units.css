@@ -1,0 +1,14 @@
+h1 {
+  color: red;
+  font-size: 30px;
+}
+p.abs {
+  font-size: 1cm;
+  font-size: 10mm;
+  font-size: 1in;
+  font-size: 10px;
+}
+p.percent {
+  font-size: 200%;
+  font-size: 50%;
+}
