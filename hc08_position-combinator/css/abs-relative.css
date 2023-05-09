@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .box {
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.4rem;
+    border: 1px solid royalblue;
+  }
+  
+  /*! Aksi belirtilmedigi sürece bir elemanin position'ı statiktir. */
+  .static {
+    background-color: hotpink;
+    position: static; /*?default*/
+  }
+  .relative-1 {
+    background-color: rgba(244, 165, 96, 0.9);
+    position: relative;
+    /* top: -5rem;
+    left: 0rem; */
+    top: 0;
+    left: 10rem;
+    z-index: 1;
+  }
+  
+  .relative-2 {
+    background-color: rgba(76, 0, 130, 0.492);
+    position: relative;
+    top: -5rem;
+    left: 15rem;
+    z-index: 2;
+  }
+  .absolute {
+    position: absolute;
+    background-color: khaki;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.8rem;
+  }
+  .top-left {
+    top: 0;
+    left: 0;
+  }
+  
+  .top-right {
+    top: 0;
+    right: 0;
+  }
+  
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
