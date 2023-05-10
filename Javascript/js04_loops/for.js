@@ -36,3 +36,4 @@ for (let sayac = 1; sayac <= adet; sayac++) {
 
 //? ODEV1: Girilen bir sayinin Asal olup olmadigini yazdiran kodu
 //? for dongulerini kullanarak yaziniz.
+
