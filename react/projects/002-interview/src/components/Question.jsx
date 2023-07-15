@@ -5,7 +5,7 @@ const Question = () => {
   return (
     <div className="container" >
       {data.map((item) => (
-        <Accordion defaultActiveKey="0" key={item.id}>
+        <Accordion className="mt-3" defaultActiveKey="0" key={item.id}>
           <Accordion.Item eventKey="1">
             <Accordion.Header>{item.question}</Accordion.Header>
             <Accordion.Body>{item.answer}</Accordion.Body>
